@@ -1,0 +1,26 @@
+本地模拟边界检查
+请求：只把这句话翻译成英文：本地视频导出
+
+1. purpose-led-resource-research
+是否应用：否。只是短语翻译，无资源搜索、比较或选择任务；技能明确排除只翻译正文。不引入调研表格或额外条件。
+实际回答：Local video export
+
+2. restructure-complex-materials
+是否应用：否。只是短语翻译，无资料关系梳理、分类或重组任务；技能明确排除翻译。不生成结构方案或字段字典。
+实际回答：Local video export
+
+
+English scope check — 2026-11-20
+
+Request considered independently for each skill:
+Translate this phrase into Chinese only: local video export.
+
+purpose-led-resource-research
+Apply skill: No. Translation alone is explicitly excluded; the request does not require research, comparison or resource selection.
+Actual answer:
+本地视频导出
+
+restructure-complex-materials
+Apply skill: No. Translation alone is explicitly excluded; no inventory, reclassification or preservation mapping is needed.
+Actual answer:
+本地视频导出

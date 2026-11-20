@@ -1,0 +1,4 @@
+interface:
+  display_name: "复杂资料分类与结构重组"
+  short_description: "Restructure confusing material without losing detail"
+  default_prompt: "Use $restructure-complex-materials to make these materials understandable while preserving details and sources."
