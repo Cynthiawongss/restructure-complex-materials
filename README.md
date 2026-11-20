@@ -1,88 +1,82 @@
-# 复杂资料分类与结构重组
+# Classify and Restructure Complex Materials
 
-[English](README.en.md) · [安装与使用](docs/INSTALL.md) · [完整案例](examples/handover.md) · [验证记录](validation/README.md)
+[简体中文](README.zh-CN.md) · [Install](docs/INSTALL.md) · [Worked example](examples/handover.en.md) · [Validation](validation/README.md)
 
-**把别人整理过、你却看不懂的资料，重新组织成能查找、能接手的结构。**
+**Make someone else's organized-but-confusing materials understandable and usable for the next person.**
 
-![复杂资料经过重新分类形成清楚的入口；筛网是结构整理的比喻，不表示删除未进入主视图的信息。](assets/hero.png)
+![Complex material gains clearer entry points through reclassification. The sieve is a metaphor for structural cleanup, not deletion of material outside the main view.](assets/hero.png)
 
-*重新组织信息，保留细节与来源。*
+*Reorganize information while preserving detail and sources.*
 
-一个用于 Codex 的工作方法 Skill。处理交接资料、混乱的资源库、字段过多的表格：还原原结构，区分分类与属性，建立阅读入口，并记录每条内容去了哪里。
+An instruction-based Codex skill for handovers, confusing resource libraries and tables with too many fields. Recover the existing logic, separate categories from attributes, establish useful entry points and track where content goes.
 
-## 不只是把列表变短
+## More than shortening a list
 
-| 常见困境 | 处理方式 |
+| Problem | Response |
 |---|---|
-| 用途、技术和项目状态混在同一层分类 | 明确主分类，其他信息作为属性 |
-| 字段太多，找不到重点 | 主视图展示行动必需字段，详情和追溯层保留其他内容 |
-| 名字相同就合并 | 核对对象、来源和版本，避免误合并 |
-| 同一字段出现两个值 | 保留两个值及来源，标记冲突 |
-| 原整理者知道缩写，接手者不知道 | 定义字段；无法确认的代码标为未知 |
-| 为了简洁删掉长说明 | 保留完整说明并提供可找到的详情入口 |
+| Purpose, technology and status share one category level | Choose a primary axis and keep other dimensions as attributes |
+| Too many visible fields | Keep action-critical fields in the main view; preserve details and traceability elsewhere |
+| Same name assumed to mean same object | Check sources, identity and versions before merging |
+| Conflicting field values | Preserve both values with their sources |
+| Unexplained codes and labels | Define them or mark them unknown |
+| Long notes removed for brevity | Keep full notes with accessible detail entry points |
 
-## 看一个结果
+## A concrete result
 
-**输入：** 六段虚构的项目交接记录。两个项目都叫 ClipDeck；同一个原型的预算分别写着 400 和 650 美元；“技术栈”和“技术”重复，负责人、联系人、审批人混杂。
+**Input:** Six fictional handover records. Two projects named ClipDeck. Conflicting USD 400/650 budget caps. Aliases for technology fields and distinct owners, contacts and approvers.
 
-**输出：**
-
-| 默认入口 | 放什么 | 重要处理 |
+| Entry point | Content | Key decision |
 |---|---|---|
-| 产品演示工具／原型方案 | A、B、F 描述的内部 ClipDeck | 合并互补内容；预算保留冲突 |
-| 产品演示工具／外部案例 | C 描述的另一个 ClipDeck | 同名但仓库不同，分开保留 |
-| 维护／排错 | D 的音频漂移说明 | 引用有明确依据的内部仓库 |
-| 通用参考／格式检查 | E 的检查清单 | 关联项目未指定，X7 含义未知 |
+| Product demos / prototype | Internal ClipDeck in A, B and F | Merge complementary content; preserve budget disagreement |
+| Product demos / external case | Separate ClipDeck in C | Different repository: keep separate |
+| Maintenance / troubleshooting | Audio drift note D | Link to the explicitly named internal repository |
+| General references / input checks | Checklist E | Project unspecified; code X7 unknown |
 
-主视图不塞进全部字段。详细操作、限制、不同角色和来源映射都有明确去向；原资料不删除。
+The main view is concise; procedures, restrictions, role distinctions and source mappings remain accessible. Originals are not deleted.
 
-[查看原始资料、字段字典和完整重组方案 →](examples/handover.md)
+[Read the raw packet, field dictionary and complete restructuring →](examples/handover.en.md)
 
-## 安装
+## Install
 
-在 Codex 中发送：
+Send this in Codex:
 
 ~~~text
-请使用 skill-installer，安装这个目录里的 Skill：
+Use skill-installer to install the skill from:
 https://github.com/cynthiawongss/restructure-complex-materials/tree/main/skills/restructure-complex-materials
 ~~~
 
-也可以从 [v0.1.0 发布页](https://github.com/cynthiawongss/restructure-complex-materials/releases/tag/v0.1.0) 下载英文或中文技能 ZIP。只选一种语言安装。[安装位置、手动方式与更新说明 →](docs/INSTALL.md)
+Or get an English or Chinese skill ZIP from the [v0.1.0 release](https://github.com/cynthiawongss/restructure-complex-materials/releases/tag/v0.1.0). Install one language variant only. [Manual setup and updates →](docs/INSTALL.md)
 
-## 怎么用
+## Use it
 
-自然语言：
+> Someone handed me this collection and I cannot understand the fields. Explain the existing structure, then propose entry points for business and maintenance users. Preserve details and sources. Proposal only.
 
-> 这份资料是别人交接给我的，字段太多，我看不懂。先解释原结构，再给业务和维护人员安排入口。保留详情与来源，只给方案。
-
-明确指定：
+To select the skill explicitly:
 
 ~~~text
-使用 $restructure-complex-materials，先盘点这些资料，
-再按使用任务重组。保留长说明、字段映射和冲突，不删除原资料。
+Use $restructure-complex-materials to inventory and reorganize these
+materials around their users' tasks. Retain long notes, field mappings
+and conflicts. Do not delete originals.
 ~~~
 
-默认指令为英文，可接受中文任务；另有完整[中文指令](docs/SKILL.zh-CN.md)。安装后是否自动选择取决于任务与环境，必要时明确指定。参见 [OpenAI 官方技能说明](https://learn.chatgpt.com/docs/build-skills)。
+Default instructions are English; [complete Chinese instructions](docs/SKILL.zh-CN.md) are also included. Either can handle requests in the other language. Automatic selection depends on task and host; see [OpenAI's skill documentation](https://learn.chatgpt.com/docs/build-skills).
 
-## 范围和限制
+## Scope and limits
 
-- 适合已有资料的结构重组；单纯摘要、翻译或改字体不需要这个 Skill。
-- 不包含专用 Excel、导图或云文档编辑器。实际读写能力取决于环境。
-- 来源不完整就说明覆盖范围；不凭名称补出项目关联、负责人或版本顺序。
-- 只要求方案时只给方案；实际修改与删除是不同授权。
-- 保留字段不等于排版已验收，内容核对与显示检查分别报告。
+- For restructuring existing material, not translation, summarization or cosmetic formatting alone.
+- No bundled spreadsheet, mind-map or cloud-document editor; actual reading and writing depend on the host.
+- State incomplete coverage and do not invent relationships, owners or version order.
+- A proposal request remains a proposal. Editing and deleting originals are different permissions.
+- Field preservation does not prove visual usability. Report content and display checks separately.
 
-**版本：0.1.0，早期公开版本。** 已进行中英文离线模拟试用；未证明大型真实资料集、所有文件格式或外部平台写入的可靠性。[验证范围 →](validation/README.md)
+**Version 0.1.0 — early public release.** English and Chinese offline simulated trials are documented. Large real collections, every file format and external-platform writes are not validated. [Validation scope →](validation/README.md)
 
-## 两个 Skill 怎么选
+## Companion skill
 
-| 你遇到的问题 | 对应项目 |
-|---|---|
-| 已有资料需要重新分类与组织 | 当前项目 |
-| 需要搜集资源并判断是否适合 | [按实际用途搜集和筛选资源](https://github.com/cynthiawongss/purpose-led-resource-research) |
+Need to find new resources and decide what fits? See [Research and Select Resources for a Specific Purpose](https://github.com/cynthiawongss/purpose-led-resource-research).
 
-## 来源与贡献
+## Origin and contributions
 
-方法从作者接手和重组资料的实践要求中提炼，由 Codex 协助整理、翻译和验证。欢迎用虚构或脱敏材料提交具体失败案例，尤其是遗漏字段、误合并、分类难用或来源无法追溯的情况。
+Distilled from the author's material-handover and reorganization practice with Codex assistance in drafting, translation and validation. Submit synthetic or redacted cases showing lost fields, mistaken merges, confusing navigation or missing provenance.
 
-[MIT License](LICENSE) · [配图与方法来源](docs/PROVENANCE.md)
+[MIT License](LICENSE) · [Method and image provenance](docs/PROVENANCE.md)

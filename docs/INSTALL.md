@@ -1,6 +1,16 @@
-# 安装与使用 / Installation
+# Installation / 安装与使用
 
-[中文首页](../README.md) · [English](../README.en.md)
+[English home](../README.md) · [简体中文](../README.zh-CN.md)
+
+## English quick guide
+
+Ask Codex's skill-installer to install the GitHub directory above. Alternatively, download one language-specific release ZIP and place the extracted `restructure-complex-materials` folder in your project's `.agents/skills/` directory. Current documented Codex versions also support `~/.agents/skills/` for user-level discovery. Installer-managed locations may differ by client version.
+
+Install only one language variant. The repository has one runnable entry point in `skills/restructure-complex-materials/SKILL.md`; the Chinese document is an alternative file, not a second installed skill. Release ZIPs contain the ready-to-copy skill folder and license.
+
+Describe your task naturally, or invoke `$restructure-complex-materials` explicitly. If the skill is missing, check the path and enabled state, then restart the client if needed. Keep local customizations before replacing an installed version.
+
+Reference: [OpenAI — Build skills](https://learn.chatgpt.com/docs/build-skills).
 
 ## 最简单：让 Codex 安装
 
@@ -52,13 +62,3 @@ your-project/
 ## 更新与移除
 
 记录安装器给出的实际目录。更新前保留本地定制，再替换该目录中的技能文件。移除时只移除这个技能目录，不需要改动项目资料。两个语言 ZIP 使用相同技能名称，属于替代版本。
-
-## English quick guide
-
-Ask Codex's skill-installer to install the GitHub directory above. Alternatively, download one language-specific release ZIP and place the extracted `restructure-complex-materials` folder in your project's `.agents/skills/` directory. Current documented Codex versions also support `~/.agents/skills/` for user-level discovery. Installer-managed locations may differ by client version.
-
-Install only one language variant. The repository has one runnable entry point in `skills/restructure-complex-materials/SKILL.md`; the Chinese document is an alternative file, not a second installed skill. Release ZIPs contain the ready-to-copy skill folder and license.
-
-Describe your task naturally, or invoke `$restructure-complex-materials` explicitly. If the skill is missing, check the path and enabled state, then restart the client if needed. Keep local customizations before replacing an installed version.
-
-Reference: [OpenAI — Build skills](https://learn.chatgpt.com/docs/build-skills).

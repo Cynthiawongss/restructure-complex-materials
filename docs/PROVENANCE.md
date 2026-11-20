@@ -1,4 +1,12 @@
-# 来源与配图 / Provenance
+# Provenance / 来源与配图
+
+## English
+
+The workflow was distilled from Cynthiawongss's working requirements with Codex assistance in drafting, translation and evaluation. It does not copy another project's code or operating manual and requires no named third-party research tool.
+
+The hero image was created with OpenAI's built-in image-generation tool and selected through iteration. Visual reference screenshots, local account paths and discarded drafts are not included. The image is illustrative, not evidence that a candidate product has been tested.
+
+All demonstration products, people and sources are fictional. The repository's [MIT license](../LICENSE) accompanies the contributed material.
 
 ## 方法
 
@@ -15,11 +23,3 @@
 ## 示例
 
 产品、姓名、链接和工作资料均为虚构。示例使用 `.invalid` 域名，不提供真实产品建议。验证是在给定材料范围内的模拟任务，不代表实际访问过网站或运行过产品。
-
-## English
-
-The workflow was distilled from Cynthiawongss's working requirements with Codex assistance in drafting, translation and evaluation. It does not copy another project's code or operating manual and requires no named third-party research tool.
-
-The hero image was created with OpenAI's built-in image-generation tool and selected through iteration. Visual reference screenshots, local account paths and discarded drafts are not included. The image is illustrative, not evidence that a candidate product has been tested.
-
-All demonstration products, people and sources are fictional. The repository's [MIT license](../LICENSE) accompanies the contributed material.

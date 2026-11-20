@@ -1,6 +1,6 @@
 # Worked example: a usable project handover
 
-[Home](../README.en.md) · [简体中文](handover.md)
+[Home](../README.md) · [简体中文](handover.md)
 
 The product-demo projects, people and .invalid URLs are fictional.
 

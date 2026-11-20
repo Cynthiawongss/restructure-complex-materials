@@ -1,6 +1,6 @@
 # 案例：把项目交接资料变成可接手的结构
 
-[返回首页](../README.md) · [English](handover.en.md)
+[返回首页](../README.zh-CN.md) · [English](handover.en.md)
 
 这是虚构产品演示工具案例，姓名、项目和 .invalid 网址均不对应真实资料。
 
