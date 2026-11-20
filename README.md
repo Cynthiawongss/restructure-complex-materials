@@ -75,8 +75,4 @@ Default instructions are English; [complete Chinese instructions](docs/SKILL.zh-
 
 Need to find new resources and decide what fits? See [Research and Select Resources for a Specific Purpose](https://github.com/cynthiawongss/purpose-led-resource-research).
 
-## Origin and contributions
-
-Distilled from the author's material-handover and reorganization practice with Codex assistance in drafting, translation and validation. Submit synthetic or redacted cases showing lost fields, mistaken merges, confusing navigation or missing provenance.
-
-[MIT License](LICENSE) · [Method and image provenance](docs/PROVENANCE.md)
+[MIT License](LICENSE)
